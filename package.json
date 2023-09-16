@@ -4,6 +4,9 @@
   "description": "Shenzen IO digital manual",
   "main": "index.js",
   "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "repository": {
     "type": "git",
@@ -14,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Dixeet/shenzenio-manual/issues"
   },
-  "homepage": "https://github.com/Dixeet/shenzenio-manual#readme"
+  "homepage": "https://github.com/Dixeet/shenzenio-manual#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.13"
+  }
 }
