@@ -13,7 +13,7 @@
             <div>&nbsp;</div>
           </div>
         </div>
-        <div>
+        <div class="--mb-5">
           <div class="--font-size-4 --mb-2">Test Instructions</div>
           <div class="--font-size-3 cheatsheet__commands-group">
             <div class=""><strong >teq</strong>&nbsp;R/I&nbsp;R/I</div>
@@ -35,7 +35,7 @@
             <div class=""><strong>dst</strong>&nbsp;R/I&nbsp;R/I</div>
           </div>
         </div>
-        <div>
+        <div class="--mb-5">
           <div class="--font-size-4 --mb-2">Registers</div>
           <div class="--font-size-3 cheatsheet__commands-group">
             <div class=""><strong>acc</strong></div>
@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="--mt-10 --flex --justify-center">
+    <div class="--mt-5 --flex --justify-center">
       <table>
         <thead>
         <tr>

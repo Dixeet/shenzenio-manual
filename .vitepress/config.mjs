@@ -13,15 +13,18 @@ export default defineConfig({
     sidebar: [
       {
         items: [
-          { text: 'Language Reference Card', link: '/' }
+          { text: 'Language Reference Card', link: '/' },
+          {
+            text: 'Story Introduction',
+            collapsed: true,
+            items: [
+              { text: 'Some progress… and a suggestion', link: '/stories/progress-suggestion' },
+              { text: 'Great chatting with you', link: '/stories/great-chatting' },
+              { text: 'Visa Application Form of the People’s Republic of China', link: '/stories/visa-application' }
+            ]
+          },
         ]
       },
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
     ],
 
     socialLinks: [
