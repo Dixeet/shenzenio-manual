@@ -1,0 +1,18 @@
+{
+  "name": "shenzenio-manual",
+  "version": "0.0.1",
+  "description": "Shenzen IO digital manual",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dixeet/shenzenio-manual.git"
+  },
+  "author": "Dixeet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dixeet/shenzenio-manual/issues"
+  },
+  "homepage": "https://github.com/Dixeet/shenzenio-manual#readme"
+}
