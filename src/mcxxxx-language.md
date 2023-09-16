@@ -96,41 +96,41 @@ defined elsewhere in the program_{#note-2}
 
 ## Basic Instructions
 
-`nop`\
+`nop`
 This instruction has no effect.
 
-`mov R/I R`\
+`mov R/I R`
 Copy the value of the first operand into the second operand.
 
-`jmp L`\
+`jmp L`
 Jump to the instruction following the specified label.
 
-`slp R/I`\
+`slp R/I`
 Sleep for the number of time units specified by the operand.
 
-`slx P`\
+`slx P`
 Sleep until data is available to be read on the XBus pin specified by the operand.
 
 ## Arithmetic Instructions
 
 Registers can store integer values between `-999` and `999`, inclusive. If an arithmetic operation would produce a result outside this range, the closest allowed value is stored instead. For example, if `acc` contains the value `800` and the instruction add `400` is executed, then the value `999` will be stored in `acc`.
 
-`add R/I`\
+`add R/I`
 Add the value of the first operand to the value of the acc register and store the result in the acc register.
 
-`sub R/I`\
+`sub R/I`
 Subtract the value of the first operand from the value of the acc register and store the result in the acc register.
 
-`mul R/I`\
+`mul R/I`
 Multiply the value of the first operand by the value of the acc register and store the result in the acc register.
 
-`not`\
+`not`
 If the value in acc is 0, store a value of 100 in acc. Otherwise, store a value of 0 in acc.
 
-`dgt R/I`\
+`dgt R/I`
 Isolate the specified digit of the value in the acc register and store the result in the acc register.
 
-`dst R/I R/I`\
+`dst R/I R/I`
 Set the digit of acc specified by the first operand to the value of the second operand.
 
 Examples of the dgt and dst instructions:
@@ -149,7 +149,7 @@ Examples of the dgt and dst instructions:
 
 For more information on conditional execution and the `+` or `-` symbols, see [Conditional Execution](/mcxxxx-language.html#conditional-execution)
 
-`teq R/I R/I`\
+`teq R/I R/I`
 Test if the value of the first operand (A) is equal to the value of the second operand (B).
 
 |      Condition      | Effect on ‘+’ Instructions | Effect on ‘-’ Instructions |
@@ -157,7 +157,7 @@ Test if the value of the first operand (A) is equal to the value of the second o
 |   A is equal to B   |          Enabled           |          Disabled          |
 | A is not equal to B |          Disabled          |          Enabled           |
 
-`tgt R/I R/I`\
+`tgt R/I R/I`
 Test if the value of the first operand (A) is greater than the value of the second operand (B).
 
 |        Condition        | Effect on ‘+’ Instructions | Effect on ‘-’ Instructions |
@@ -165,7 +165,7 @@ Test if the value of the first operand (A) is greater than the value of the seco
 |   A is greater than B   |          Enabled           |          Disabled          |
 | A is not greater than B |          Disabled          |          Enabled           |
 
-`tlt R/I R/I`\
+`tlt R/I R/I`
 Test if the value of the first operand (A) is less than the value of the second operand (B)
 
 |      Condition       | Effect on ‘+’ Instructions | Effect on ‘-’ Instructions |
@@ -173,7 +173,7 @@ Test if the value of the first operand (A) is less than the value of the second 
 |   A is less than B   |          Enabled           |          Disabled          |
 | A is not less than B |          Disabled          |          Enabled           |
 
-`tcp R/I R/I`\
+`tcp R/I R/I`
 Compare the value of the first operand (A) to the value of the second operand (B).
 
 |      Condition      | Effect on ‘+’ Instructions | Effect on ‘-’ Instructions |

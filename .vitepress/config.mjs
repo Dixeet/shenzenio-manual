@@ -4,7 +4,17 @@ export default defineConfig({
   srcDir: './src',
   title: "Shenzen IO Manual",
   description: "Shenzen IO Digital Manual",
+  markdown: {
+    breaks: true,
+  },
   themeConfig: {
+    search: {
+      provider: 'local',
+      options: {
+        detailedView: true,
+      }
+    },
+
     nav: [
       { text: 'Language Reference Card', link: '/' },
     ],
@@ -32,6 +42,13 @@ export default defineConfig({
             ]
           },
           { text: 'MCxxxx Family Language Reference', link: '/mcxxxx-language' },
+          {
+            text: 'Parts Datasheets',
+            collapsed: true,
+            items: [
+              { text: 'MC4000', link: '/parts/mc4000' },
+            ]
+          },
         ]
       },
     ],

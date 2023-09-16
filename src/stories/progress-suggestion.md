@@ -30,7 +30,7 @@ M.
 
 \-----
 
-Margie Fish, President\
+Margie Fish, President
 Fish Partners Recruiting
 
 _“The journey of a thousand miles begins with a single step…”_

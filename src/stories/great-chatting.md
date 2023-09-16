@@ -25,7 +25,7 @@ Jess
 
 //
 
-Jessie H. Huang\
+Jessie H. Huang
 Huang & Associates
 
 _“Connecting talent across the Pacific since 2021!”_
