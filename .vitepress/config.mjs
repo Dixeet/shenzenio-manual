@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: './src',
   title: "Shenzen IO Manual",
@@ -32,6 +31,7 @@ export default defineConfig({
               { text: 'AN650: Reference Design: Touch-Activated Light Controller', link: '/application-notes/an650' },
             ]
           },
+          { text: 'MCxxxx Family Language Reference', link: '/mcxxxx-language' },
         ]
       },
     ],
