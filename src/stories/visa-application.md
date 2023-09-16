@@ -1,7 +1,3 @@
----
-aside: false
----
-
 # Visa Application Form of the People’s Republic of China
 
 Applicant should fill out this form truly and completely. Please write your answer in capital English letters in the space provided or cross the appropriate box to select.

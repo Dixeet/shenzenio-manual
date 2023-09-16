@@ -1,7 +1,3 @@
----
-aside: false
----
-
 # Great chatting with you
 ---
 

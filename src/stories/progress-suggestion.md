@@ -1,7 +1,3 @@
----
-aside: false
----
-
 # Some progress… and a suggestion
 ---
 
