@@ -1,0 +1,134 @@
+.-- {
+  &flex {
+    display: flex;
+  }
+
+  &flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  &block {
+    display: block;
+  }
+
+  &col {
+    //display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    @for $i from 1 through 12 {
+      &-#{$i} {
+        flex: none;
+        width: calc(100% * ($i / 12));
+      }
+    }
+  }
+
+  &justify- {
+    &start {
+      justify-content: flex-start;
+    }
+
+    &end {
+      justify-content: flex-end;
+    }
+
+    &center {
+      justify-content: center;
+    }
+
+    &between {
+      justify-content: space-between;
+    }
+
+    &around {
+      justify-content: space-around;
+    }
+
+    &evenly {
+      justify-content: space-evenly;
+    }
+  }
+
+  $base-calc: 0.25rem;
+
+  @for $i from 0 through 12 {
+    &m{
+      &#{$i} {
+        margin: calc($base-calc * $i);
+      }
+      &x-#{$i} {
+        margin-left: calc($base-calc * $i);
+        margin-right: calc($base-calc * $i);
+      }
+      &y-#{$i} {
+        margin-top: calc($base-calc * $i);
+        margin-bottom: calc($base-calc * $i);
+      }
+      &l-#{$i} {
+        margin-left: calc($base-calc * $i);
+      }
+      &r-#{$i} {
+        margin-right: calc($base-calc * $i);
+      }
+      &t-#{$i} {
+        margin-top: calc($base-calc * $i);
+      }
+      &b-#{$i} {
+        margin-bottom: calc($base-calc * $i);
+      }
+    }
+    &p{
+      &#{$i} {
+        padding: calc($base-calc * $i);
+      }
+      &x-#{$i} {
+        padding-left: calc($base-calc * $i);
+        padding-right: calc($base-calc * $i);
+      }
+      &y-#{$i} {
+        padding-top: calc($base-calc * $i);
+        padding-bottom: calc($base-calc * $i);
+      }
+      &l-#{$i} {
+        padding-left: calc($base-calc * $i);
+      }
+      &r-#{$i} {
+        padding-right: calc($base-calc * $i);
+      }
+      &t-#{$i} {
+        padding-top: calc($base-calc * $i);
+      }
+      &b-#{$i} {
+        padding-bottom: calc($base-calc * $i);
+      }
+    }
+    &gap-#{$i} {
+      gap: calc($base-calc * $i);
+    }
+    @if $i > 0 {
+      &size-#{$i} {}
+    }
+  }
+  &mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &font- {
+  $weights: normal, bold, light;
+    @each $weight in $weights {
+      &#{$weight} {
+        font-weight: $weight;
+      }
+    }
+    @for $i from 1 through 12 {
+      &size-#{$i} {
+        font-size: calc($base-calc * $i);
+      }
+    }
+    &italic {
+      font-style: italic;
+    }
+  }
+}
