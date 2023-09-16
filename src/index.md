@@ -4,14 +4,11 @@ titleTemplate: false
 
 # Shenzen IO Manual
 
-## CheatSheet
+## Language Reference Card
 
-**Basic Instructions**
+<TheCheatSheet/>
 
-```
-nop
-mov R/I R
-jmp L
-slp R/I
-slx P
-```
+<script setup>
+import TheCheatSheet from './components/TheCheatSheet.vue'
+
+</script>

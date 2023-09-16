@@ -6,13 +6,16 @@ export default defineConfig({
   title: "Shenzen IO Manual",
   description: "Shenzen IO Digital Manual",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/api-examples' }
+      { text: 'Language Reference Card', link: '/' },
     ],
 
     sidebar: [
+      {
+        items: [
+          { text: 'Language Reference Card', link: '/' }
+        ]
+      },
       {
         text: 'Examples',
         items: [
@@ -22,7 +25,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Dixeet/shenzenio-manual' }
     ]
   }
 })
