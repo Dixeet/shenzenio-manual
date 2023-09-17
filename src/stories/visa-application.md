@@ -23,10 +23,6 @@ Applicant should fill out this form truly and completely. Please write your answ
 | 4.1 | Have you ever been refused entry to China?                              |                                                                                                       |
 | 4.2 | Do you have a criminal record?                                          |                                                                                                       |
 
-I have read and understood all the questions in this application. I shall be fully responsible for
-the answers, which are true and correct. I understand that whether to issue a visa, type of visa,
-number of entries, validity and duration of each stay will be decided by consular officers, and any
-false, misleading or incomplete statement may result in a refusal of a visa for or denial of entry
-into China.
+I have read and understood all the questions in this application. I shall be fully responsible for the answers, which are true and correct. I understand that whether to issue a visa, type of visa, number of entries, validity and duration of each stay will be decided by consular officers, and any false, misleading or incomplete statement may result in a refusal of a visa for or denial of entry into China.
 
 Applicant’s signature: __________________________ &nbsp; Date (yyyy-mm-dd): __________________

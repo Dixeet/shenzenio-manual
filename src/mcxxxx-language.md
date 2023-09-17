@@ -10,16 +10,11 @@
 
 ## Introduction
 
-The MCxxxx family of microcontrollers employs a common programming system to simplify system design and
-reduce new product development time. A program written for one member of the MCxxxx family can be re-used in any
-other MCxxxx microcontroller with few or no changes (see note [[1]](/mcxxxx-language.html#note-1)).
+The MCxxxx family of microcontrollers employs a common programming system to simplify system design and reduce new product development time. A program written for one member of the MCxxxx family can be re-used in any other MCxxxx microcontroller with few or no changes (see note [[1]](/mcxxxx-language.html#note-1)).
 
-Programs for the MCxxxx are assembled from a small but versatile set of operations. Each line of an MCxxxx
-program can contain an instruction, which consists of the instruction’s name followed by zero or more instruction operands. Detailed descriptions of the available instructions and their usage are provided below.
+Programs for the MCxxxx are assembled from a small but versatile set of operations. Each line of an MCxxxx program can contain an instruction, which consists of the instruction’s name followed by zero or more instruction operands. Detailed descriptions of the available instructions and their usage are provided below.
 
-MCxxxx microcontrollers are designed to be used in power-constrained environments and applications, and the
-MCxxxx programming system has been designed accordingly. While a MCxxxx microcontroller is in a sleep state, it
-consumes no power. Otherwise, power consumption is proportional to the number of instructions executed.
+MCxxxx microcontrollers are designed to be used in power-constrained environments and applications, and the MCxxxx programming system has been designed accordingly. While a MCxxxx microcontroller is in a sleep state, it consumes no power. Otherwise, power consumption is proportional to the number of instructions executed.
 
 _[1] MCxxxx microcontrollers have varying features, pinouts, and program space limitations, described in the modelspecific datasheets. Some adaptation may be required to account for these model-specific differences._ {#note-1}
 
@@ -52,21 +47,17 @@ Any text following a `#` symbol is ignored until the end of the line. Comments i
 Labels must appear first on a line, and are followed by a colon `:`. Labels are used as jump targets by the jmp instruction. Labels must begin with a letter and may contain alphabetic, numeric, and underscore characters.
 
 ## Conditional Execution
-All instructions in the MCxxxx programming language are capable of **conditional execution**. Prefixing an instruction with a `+` or `-` symbol will cause that instruction to be enabled or disabled by **test instructions**. When an instruction is disabled by a test instruction, it will be skipped and will not consume power. Instructions with no prefix are never disabled and always execute normally. All conditional instructions start in a disabled state. A test instruction
-must be executed to enable conditional instructions.
+All instructions in the MCxxxx programming language are capable of **conditional execution**. Prefixing an instruction with a `+` or `-` symbol will cause that instruction to be enabled or disabled by **test instructions**. When an instruction is disabled by a test instruction, it will be skipped and will not consume power. Instructions with no prefix are never disabled and always execute normally. All conditional instructions start in a disabled state. A test instruction must be executed to enable conditional instructions.
 
 For an example of conditional instructions in use, see [Application Note 650: Touch-Activated Light Controller](/application-notes/an650).
 
 ## Registers
 
-Registers are used as sources and destinations for data manipulated by MCxxxx instructions. The set of registers
-varies between MCxxxx models. It is an error to use a register in a microcontroller program if that register is not present on that microcontroller.
+Registers are used as sources and destinations for data manipulated by MCxxxx instructions. The set of registers varies between MCxxxx models. It is an error to use a register in a microcontroller program if that register is not present on that microcontroller.
 
-`acc` is the primary general-purpose register used for internal computation on MCxxxx family microcontrollers. All
-arithmetic operations implicitly use and modify the value of `acc`.
+`acc` is the primary general-purpose register used for internal computation on MCxxxx family microcontrollers. All arithmetic operations implicitly use and modify the value of `acc`.
 
-`dat` is a second register available on some MCxxxx family members. It can be used in most contexts where acc
-is permitted.
+`dat` is a second register available on some MCxxxx family members. It can be used in most contexts where acc is permitted.
 
 The internal registers of MCxxxx microprocessors (`acc` and `dat`, if available) are initialized to the value 0.
 
@@ -88,11 +79,9 @@ Instruction operands are described with the following notation:
 | P        | Pin register (p0, p1, etc.)                              |
 | L        | Label [[2]](/mcxxxx-language.html#note-2)                |
 
-_[1] Integer values must be in the range
--999 to 999._{#note-1b}
+_[1] Integer values must be in the range -999 to 999._{#note-1b}
 
-_[2] Labels used as operands must be
-defined elsewhere in the program_{#note-2}
+_[2] Labels used as operands must be defined elsewhere in the program_{#note-2}
 
 ## Basic Instructions
 
