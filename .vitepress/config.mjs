@@ -51,6 +51,7 @@ export default defineConfig({
               { text: 'DX300', link: '/parts/dx300' },
               { text: '100P-14', link: '/parts/100p-14' },
               { text: '200P-14', link: '/parts/200p-14' },
+              { text: 'LC70Gxx', link: '/parts/lc70gxx' },
             ]
           },
         ]

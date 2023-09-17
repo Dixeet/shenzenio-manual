@@ -50,6 +50,28 @@
     }
   }
 
+  &align- {
+    &start {
+      align-items: flex-start;
+    }
+
+    &end {
+      align-items: flex-end;
+    }
+
+    &center {
+      align-items: center;
+    }
+
+    &baseline {
+      align-items: baseline;
+    }
+
+    &stretch {
+      align-items: stretch;
+    }
+  }
+
   $base-calc: 0.25rem;
 
   @for $i from 0 through 12 {
