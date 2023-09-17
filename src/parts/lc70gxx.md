@@ -32,11 +32,17 @@ When measuring inputs, signals less than 50 are interpreted as “off”, while 
 <TwoCols class="--align-center">
 <template #left>
 
-<ImgContainer src="/images/26.webp" alt="LC70G04" />
+<ImgContainer>
+
+<img src="/images/26.webp" alt="LC70G04" />
+</ImgContainer>
 </template>
 <template #right>
 
-<ImgContainer src="/images/25.webp" alt="LC70G08" />
+<ImgContainer>
+
+<img src="/images/25.webp" alt="LC70G08" />
+</ImgContainer>
 </template>
 </TwoCols>
 

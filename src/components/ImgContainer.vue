@@ -1,13 +1,8 @@
 <template>
   <div class="img-container">
-    <img :width="width" :src="withBase(src)" :alt="alt" >
+    <slot/>
   </div>
 </template>
-
-<script setup>
-import { withBase } from 'vitepress';
-const { src, width, alt } = defineProps(['src', 'width', 'alt'])
-</script>
 
 <style lang="scss">
 .img-container {
