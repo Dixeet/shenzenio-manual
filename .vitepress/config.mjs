@@ -47,6 +47,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: 'MC4000', link: '/parts/mc4000' },
+              { text: 'MC6000', link: '/parts/mc6000' },
             ]
           },
         ]

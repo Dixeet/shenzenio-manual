@@ -21,5 +21,8 @@
   "devDependencies": {
     "sass": "^1.67.0",
     "vitepress": "^1.0.0-rc.13"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
   }
 }
