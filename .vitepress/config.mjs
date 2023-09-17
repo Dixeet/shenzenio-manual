@@ -53,6 +53,7 @@ export default defineConfig({
               { text: '200P-14', link: '/parts/200p-14' },
               { text: 'LC70Gxx', link: '/parts/lc70gxx' },
               { text: 'DT2415', link: '/parts/dt2415' },
+              { text: 'C2S-RF901', link: '/parts/c2s-rf901' },
             ]
           },
         ]
