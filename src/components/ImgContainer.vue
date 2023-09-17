@@ -1,12 +1,8 @@
 <template>
   <div class="img-container">
-    <img :width="width" :src="src" :alt="alt" >
+    <slot/>
   </div>
 </template>
-
-<script setup>
-const { src, width, alt } = defineProps(['src', 'width', 'alt'])
-</script>
 
 <style lang="scss">
 .img-container {

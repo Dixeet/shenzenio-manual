@@ -1,12 +1,14 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  srcDir: './src',
   title: "Shenzen IO Manual",
   description: "Shenzen IO Digital Manual",
   markdown: {
     breaks: true,
   },
+  srcDir: './src',
+  base: '/shenzenio-manual/',
+  outDir: 'docs',
   themeConfig: {
     search: {
       provider: 'local',

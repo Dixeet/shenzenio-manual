@@ -39,7 +39,10 @@ The FM/iX FM Blaster is a versatile FMbased tone generator applicable to a diver
 ## Note values
 </WideSubtitleBlock>
 
-<ImgContainer src="/images/29.webp" alt="Note values" />
+<ImgContainer>
+
+<img src="/images/29.webp" alt="Note values" />
+</ImgContainer>
 
 <TwoCols>
 <template #left>
@@ -68,6 +71,9 @@ The FM/iX FM Blaster is a versatile FMbased tone generator applicable to a diver
 ## Pinout Diagram
 </WideSubtitleBlock>
 
-<ImgContainer src="/images/30.webp" alt="Pinout Diagram" />
+<ImgContainer>
+
+<img src="/images/30.webp" alt="Pinout Diagram" />
+</ImgContainer>
 </template>
 </TwoCols>
