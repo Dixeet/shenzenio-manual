@@ -49,6 +49,7 @@ export default defineConfig({
               { text: 'MC4000', link: '/parts/mc4000' },
               { text: 'MC6000', link: '/parts/mc6000' },
               { text: 'DX300', link: '/parts/dx300' },
+              { text: '100P-14', link: '/parts/100p-14' },
             ]
           },
         ]
