@@ -1,10 +1,11 @@
 <template>
   <div class="img-container">
-    <img :width="width" :src="src" :alt="alt" >
+    <img :width="width" :src="withBase(src)" :alt="alt" >
   </div>
 </template>
 
 <script setup>
+import { withBase } from 'vitepress';
 const { src, width, alt } = defineProps(['src', 'width', 'alt'])
 </script>
 
