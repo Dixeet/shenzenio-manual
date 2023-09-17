@@ -54,6 +54,7 @@ export default defineConfig({
               { text: 'LC70Gxx', link: '/parts/lc70gxx' },
               { text: 'DT2415', link: '/parts/dt2415' },
               { text: 'C2S-RF901', link: '/parts/c2s-rf901' },
+              { text: 'FM/iX', link: '/parts/fm-ix' },
             ]
           },
         ]
